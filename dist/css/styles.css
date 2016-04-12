@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.menu-list > h2 {
+  margin: 20px 0; }
+
+.menu-list > ul > li {
+  margin-bottom: 10px;
+  padding: 10px; }
+  .menu-list > ul > li > p {
+    margin: 0; }
+    .menu-list > ul > li > p.menu-list__name {
+      font-size: 1.5em; }
+  .menu-list > ul > li:nth-child(odd) {
+    background-color: #F1F1F1; }

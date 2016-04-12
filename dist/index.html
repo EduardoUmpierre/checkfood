@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="checkfoodApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>Checkfood</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12 menu-list" ng-controller="menuListController">
+					<h2>Menu</h2>
+
+					<ul>
+						<li ng-repeat="menu in menus">
+							<p class="menu-list__name">
+								{{ menu.name }}
+
+								<span class="pull-right">{{ menu.price | currency: "R$" }}</span>
+							</p>
+							<p>{{ menu.description }}</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<script src="js/app.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

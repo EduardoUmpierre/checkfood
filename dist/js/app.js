@@ -1,0 +1,1 @@
+var cf=angular.module("checkfoodApp",[]);cf.controller("menuListController",["$scope","$http",function(o,t){t.get("http://checkfood.app/api/menu").then(function(t){o.menus=t.data})}]);
